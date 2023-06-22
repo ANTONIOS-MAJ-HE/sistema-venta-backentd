@@ -1,11 +1,28 @@
 package com.sistema.venta.dto;
 
+import java.util.Set;
+
+import com.sistema.venta.entidades.Comentario;
+
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.Size;
+
 public class PublicacionDTO {
 
 	private Long id;
+	
+	@NotEmpty
+	@Size(min = 2, message = "El titulo de la publicacion deberia de tener al menos 2 caracteres")
 	private String titulo;
+	
+	@NotEmpty
+	@Size(min = 10, message = "La descripcion de la publicacion deberia de tener al menos 10 caracteres")
 	private String descripcion;
+	
+	@NotEmpty
 	private String contenido;
+	
+	private Set<Comentario> comentarios;
 
 	public Long getId() {
 		return id;
@@ -37,6 +54,14 @@ public class PublicacionDTO {
 
 	public void setContenido(String contenido) {
 		this.contenido = contenido;
+	}
+
+	public Set<Comentario> getComentarios() {
+		return comentarios;
+	}
+
+	public void setComentarios(Set<Comentario> comentarios) {
+		this.comentarios = comentarios;
 	}
 
 	public PublicacionDTO() {
