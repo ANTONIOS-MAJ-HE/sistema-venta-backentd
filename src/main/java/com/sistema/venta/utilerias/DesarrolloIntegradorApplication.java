@@ -1,4 +1,4 @@
-package com.sistema.venta;
+package com.sistema.venta.utilerias;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

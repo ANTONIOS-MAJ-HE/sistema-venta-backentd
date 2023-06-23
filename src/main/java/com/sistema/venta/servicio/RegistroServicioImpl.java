@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import com.sistema.venta.repositorio.RegistroRepository;
 import com.sistema.venta.dto.RegistroDTO;
 import com.sistema.venta.entidades.Registro;
-import com.sistema.venta.excepciones.ResourceNotFoundException;
+import com.sistema.venta.exepciones.ResourceNotFoundException;
 
 @Service
 public class RegistroServicioImpl implements RegistroServicio {
