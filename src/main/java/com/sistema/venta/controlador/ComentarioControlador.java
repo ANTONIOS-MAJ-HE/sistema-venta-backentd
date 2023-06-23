@@ -2,6 +2,8 @@ package com.sistema.venta.controlador;
 
 import java.util.List;
 
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -17,7 +19,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.sistema.venta.dto.ComentarioDTO;
 import com.sistema.venta.servicio.ComentarioServicio;
 
-import jakarta.validation.Valid;
+
 
 @RestController
 @RequestMapping("/api/")
