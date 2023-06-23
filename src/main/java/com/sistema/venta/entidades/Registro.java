@@ -9,7 +9,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.GeneratedValue;
 
 @Entity
-@Table(name = "usuarios", uniqueConstraints = { @UniqueConstraint(columnNames = { "dni" }) })
+@Table(name = "usuarios", uniqueConstraints = { @UniqueConstraint(columnNames = { "dni" }), @UniqueConstraint(columnNames = { "correo" }) })
 public class Registro {
 
 	@Id
