@@ -1,14 +1,13 @@
 package com.sistema.venta.servicio;
 
-import java.util.List;
-
 import com.sistema.venta.dto.PublicacionDTO;
+import com.sistema.venta.dto.PublicacionRespuesta;
 
 public interface PublicacionServicio {
 	
 	public PublicacionDTO crearPublicacion(PublicacionDTO publicacionDTO);
 
-	public List<PublicacionDTO> obtenerTodasLasPublicaciones();
+	public PublicacionRespuesta obtenerTodasLasPublicaciones(int numeroDePagina, int medidaDePagina, String ordenarPor, String sortDir );
 
 	public PublicacionDTO obtenerPublicacionPorId(long id);
 
