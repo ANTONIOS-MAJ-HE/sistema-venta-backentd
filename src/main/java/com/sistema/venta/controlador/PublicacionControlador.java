@@ -18,7 +18,7 @@ import com.sistema.venta.dto.PublicacionRespuesta;
 import com.sistema.venta.servicio.PublicacionServicio;
 import com.sistema.venta.utilerias.AppConstantes;
 
-import jakarta.validation.Valid;
+import javax.validation.Valid;
 
 @RestController
 @RequestMapping("/api/publicaciones")

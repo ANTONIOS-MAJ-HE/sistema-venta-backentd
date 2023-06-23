@@ -8,7 +8,7 @@ import java.util.Map;
 
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.HttpStatusCode;
+//import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
 import org.springframework.lang.Nullable;
 import org.springframework.validation.FieldError;
@@ -41,7 +41,7 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
 		return new ResponseEntity<>(errorDetalles,HttpStatus.INTERNAL_SERVER_ERROR);
 	}
 	
-	
+/*	
 	@Override
 	@Nullable
 	protected ResponseEntity<Object> handleMethodArgumentNotValid(MethodArgumentNotValidException ex,
@@ -55,5 +55,5 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
 		});
 		
 		return new ResponseEntity<>(errores,HttpStatus.BAD_REQUEST);
-	}
+	}*/
 }

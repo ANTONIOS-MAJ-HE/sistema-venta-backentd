@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.sistema.venta.dto.ComentarioDTO;
 import com.sistema.venta.servicio.ComentarioServicio;
 
-import jakarta.validation.Valid;
+import javax.validation.Valid;
 
 @RestController
 @RequestMapping("/api/")
