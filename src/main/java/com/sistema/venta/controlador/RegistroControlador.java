@@ -14,8 +14,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.demo.dto.RegistroDTO;
-import com.example.demo.servicio.RegistroServicio;
+import com.sistema.venta.dto.RegistroDTO;
+import com.sistema.venta.servicio.RegistroServicio;
 
 @RestController
 @RequestMapping("/api/usuarios")
