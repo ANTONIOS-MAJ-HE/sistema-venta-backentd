@@ -2,20 +2,10 @@ package com.sistema.venta.dto;
 
 public class RegistroDTO {
 
-	private Long id;
 	private String nombre;
-	private String apellido;
-	private String correo;
+	private String username;
+	private String email;
 	private String password;
-	private String dni;
-
-	public Long getId() {
-		return id;
-	}
-
-	public void setId(Long id) {
-		this.id = id;
-	}
 
 	public String getNombre() {
 		return nombre;
@@ -25,36 +15,28 @@ public class RegistroDTO {
 		this.nombre = nombre;
 	}
 
-	public String getApellido() {
-		return apellido;
+	public String getUsername() {
+		return username;
 	}
 
-	public void setApellido(String apellido) {
-		this.apellido = apellido;
+	public void setUsername(String username) {
+		this.username = username;
 	}
 
-	public String getCorreo() {
-		return correo;
+	public String getEmail() {
+		return email;
 	}
 
-	public void setCorreo(String correo) {
-		this.correo = correo;
+	public void setEmail(String email) {
+		this.email = email;
 	}
 
 	public String getPassword() {
 		return password;
-	}
+	}  
 
 	public void setPassword(String password) {
 		this.password = password;
-	}
-
-	public String getDni() {
-		return dni;
-	}
-
-	public void setDni(String dni) {
-		this.dni = dni;
 	}
 
 	public RegistroDTO() {
